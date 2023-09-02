@@ -1,4 +1,4 @@
-# omnett-project
+# omnet-project
 
 This is a network built using omnet++ and C++
 
