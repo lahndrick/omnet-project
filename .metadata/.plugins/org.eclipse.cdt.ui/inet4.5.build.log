@@ -1,0 +1,14 @@
+16:37:31 **** Incremental Build of configuration release for project inet4.5 ****
+make MODE=release -j12 all 
+make[1]: Entering directory '/c/omnetpp-6.0.1/samples/inet4.5/src'
+*** CCACHE not detected - using precompiled headers
+*** COMPILING with:
+clang++ -c  -O3 -DNDEBUG=1 -ffp-contract=off   -MMD -MP -MF .d    -isystem /opt/mingw64/include -Wno-deprecated-register -Wno-unused-function -fno-omit-frame-pointer -DWITH_QTENV -DWITH_NETBUILDER -DWITH_OSG -DINET_EXPORT  -Wno-overloaded-virtual -include inet/common/precompiled_release.h -DOMNETPPLIBS_IMPORT -DINET_EXPORT -I. -I/c/omnetpp-6.0.1/include
+*** LINKING with:
+clang++ -shared  -o ../out/clang-release/src/libINET.dll  -Wl,--whole-archive  -Wl,--no-whole-archive -loppenvir -loppsim -lstdc++    -fuse-ld=lld  -L/usr/bin -L/opt/mingw64/lib -L/c/omnetpp-6.0.1/lib -Wl,--out-implib,../out/clang-release/src/libINET.dll.a -Wl,--output-def,../out/clang-release/src/libINET.def -lws2_32 
+Building...
+make[1]: Nothing to be done for 'all-pch'.
+make[1]: Leaving directory '/c/omnetpp-6.0.1/samples/inet4.5/src'
+
+16:37:34 Build Finished. 0 errors, 0 warnings. (took 3s.232ms)
+

@@ -1,0 +1,6 @@
+16:37:34 **** Incremental Build of configuration release for project WLAN ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+
+16:37:34 Build Finished. 0 errors, 0 warnings. (took 295ms)
+

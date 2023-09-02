@@ -1,0 +1,26 @@
+[General]
+network = WLAN
+#cmdenv-output-file = omnetpp.log
+#debug-on-errors = true
+#record-eventlog = true
+**.constraintAreaMinX = 0m
+**.constraintAreaMinY = 0m
+**.constraintAreaMinZ = 0m
+**.constraintAreaMaxX = 500m
+**.constraintAreaMaxY = 300m
+**.constraintAreaMaxZ = 0m
+# access point
+**.ap.wlan[*].address = "10:00:00:00:00:00"
+**.host[*].**.mgmt.accessPointAddress = "10:00:00:00:00:00"
+**.mgmt.frameCapacity = 10
+# ping app (host[0] pinged by others)
+**.numApps = 1
+**.app[0].typename = "PingApp"
+*.host[0].app[0].destAddr = ""
+*.host[*].app[0].destAddr = "host[0]"
+*.host[*].app[0].sendInterval = 10ms
+**.wlan[*].mac.retryLimit = 7
+**.bandName = "5 GHz (20 MHz)" #,"5 GHz (20 MHz)","5 GHz (40 MHz)","5 GHz (80
+MHz)","5 GHz (160 MHz)"
+**.opMode = "ac"
+#**.opMode = "a"
